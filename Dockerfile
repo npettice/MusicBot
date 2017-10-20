@@ -1,6 +1,6 @@
 FROM ubuntu:14.04
 
-MAINTAINER Sidesplitter, https://github.com/SexualRhinoceros/MusicBot
+MAINTAINER Maxium, https://github.com/npettice/MusicBot
 
 #Install dependencies
 RUN sudo apt-get update \
