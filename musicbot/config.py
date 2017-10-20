@@ -78,6 +78,7 @@ class Config:
         self.delete_messages  = config.getboolean('MusicBot', 'DeleteMessages', fallback=ConfigDefaults.delete_messages)
         self.delete_invoking = config.getboolean('MusicBot', 'DeleteInvoking', fallback=ConfigDefaults.delete_invoking)
         self.debug_mode = config.getboolean('MusicBot', 'DebugMode', fallback=ConfigDefaults.debug_mode)
+        self.nowplaying = config.getboolean('MusicBot', 'NowPlaying', fallback=ConfigDefaults.nowplaying)
 
         self.blacklist_file = config.get('Files', 'BlacklistFile', fallback=ConfigDefaults.blacklist_file)
         self.auto_playlist_file = config.get('Files', 'AutoPlaylistFile', fallback=ConfigDefaults.auto_playlist_file)
@@ -187,6 +188,7 @@ class ConfigDefaults:
     delete_messages = True
     delete_invoking = False
     debug_mode = False
+    nowplaying = True
 
     options_file = 'config/options.ini'
     blacklist_file = 'config/blacklist.txt'
